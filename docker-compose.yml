@@ -2,11 +2,15 @@ tomcat80:
   image: tomcat:8.0
   ports:
    - "8000:8080"
+  cpu_shares: 50
+  mem_limit: 1000000000
 
 tomcat70:
   image: tomcat:7.0
   ports:
    - "7000:8080"
+  cpu_shares: 50
+  mem_limit: 1000000000
 
 ## Monitoring ##
 influxsrv:
